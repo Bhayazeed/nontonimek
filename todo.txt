@@ -1,0 +1,2 @@
+- Buat LandingPage/HomePage (Isi list anime ongoing yang baru rilis )
+--Buat Header terlebih dahulu ada navigasi home, completed, ongoing dengan ada search bar di kanan ujung dan logo di kiri ujung
