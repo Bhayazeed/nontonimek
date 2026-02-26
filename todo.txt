@@ -3,4 +3,5 @@
 --Buat section isinya anime yang lagi trending dengan card (V)
 
 -Buat halaman nonton
---Buat header dan juga informasi anime yang di tonton
+--Buat header dan juga informasi anime yang di tonton (V)
+--buat videoplayer untuk menonton dan pilihan episode (V)
