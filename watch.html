@@ -1,112 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nontonimek</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+        /* Standar Firefox */
+        .custom-scrollbar {
+            scrollbar-width: thin; /* Membuat scrollbar tipis */
+            scrollbar-color: #495057 transparent; /* warna-thumb warna-track */
+        }
+
+        /* Standar Chrome, Edge, Safari */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px; 
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent; 
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #495057; 
+            border-radius: 10px; 
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background-color: #6c757d; 
+        }
+    </style>
 </head>
-    <body class="text-white" style="background-color: #0b0c2a;">
-        <!--Header begin-->
-        <header>
-            <nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #070720;">
-                <div class="container">
-                    <a class="navbar-brand text-white" href="#">
-                        <h3 class="m-0">Nontonimek</h3>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarUtama" aria-controls="navbarUtama" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarUtama">
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Ongoing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Completed</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex" role="search" id="form-pencarian">
-                            <input class="form-control me-2" type="search" placeholder="Cari anime..." aria-label="Search" id="input-pencarian">
-                            <button class="btn btn-outline-light" type="submit">Cari</button>
-                        </form>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!--Header end-->
-        <!--Product Section begin-->
-        <section class="product mt-5">
+
+<body class="text-white" style="background-color: #0b0c2a;">
+    <!--Header begin-->
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #070720;">
             <div class="container">
-                <div class="anime_info row gy-4 align-items-start"> 
-                    <div class="anime_info_pic col-12 col-md-4 col-lg-3">
-                        <img class="img-fluid w-100 rounded shadow-lg" src="https://otakudesu.best/wp-content/uploads/2020/03/Bofuri-Sub-Indo.jpg" alt="Poster Bofuri">
-                    </div>
-                    <div class="anime_info_text col-12 col-md-8 col-lg-9">
-                        <div class="anime_info_text_title">
-                            <h2 class="fw-bold mb-3">Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu.</h2>
-                    
-                            <div class="anime_info_text_badges d-flex flex-wrap gap-2 mb-4">
-                                <span class="badge bg-warning text-dark rounded-pill px-3 py-2"><i class="bi bi-star-fill me-1"></i> 8.5</span>
-                                <span class="badge bg-danger rounded-pill px-3 py-2">Completed</span>
-                                <span class="badge bg-secondary border border-light rounded-pill px-3 py-2">Action</span>
-                                <span class="badge bg-secondary border border-light rounded-pill px-3 py-2">Fantasy</span>
-                                <span class="badge bg-secondary border border-light rounded-pill px-3 py-2">Sci-Fi</span>
-                            </div>
-
-                            <div class="anime_info_text_desc text-light" style="line-height: 1.8; font-size: 1.05rem;">
-                                <p>Suatu hari Kaede Honjou diajak oleh sahabatnya untuk bermain salah satu game VRMMO terkenal yaitu New World Online. Walaupun sangat jarang bermain game akhirnya ia mencoba game tersebut.</p>
-                                <p>Di dalam game, Kaede menggunakan nickname Maple. Tanpa berbekal pengalaman apapun ia mencoba untuk menjelajah game ini. Karena tak ingin merasakan sakit, ia memilih untuk menggunakan karakter tameng dan mengalokasikan semua status pointnnya untuk meningkatkan daya tahan.</p>
-                            </div>
-                        </div>
-                    </div>
+                <a class="navbar-brand text-white" href="#">
+                    <h3 class="m-0">Nontonimek</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarUtama"
+                    aria-controls="navbarUtama" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarUtama">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ongoing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Completed</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search" id="form-pencarian">
+                        <input class="form-control me-2" type="search" placeholder="Cari anime..." aria-label="Search"
+                            id="input-pencarian">
+                        <button class="btn btn-outline-light" type="submit">Cari</button>
+                    </form>
                 </div>
-                <div class="row mt-5 gy-4">
-                    <div class="col-12 col-lg-8">
-                        <div class="ratio ratio-16x9 shadow-lg rounded overflow-hidden mb-3">
-                            <iframe 
-                                src="https://desustream.info/dstream/otakuplay/v2/index.php?id=TzQvcis4MGc3K2ZaaGJ6QThaNERGbmd5dlZkSjNScnZEMGpKRk5QRnRxVT0=" 
-                                frameborder="0" 
-                                title="Anime Video Player" 
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                        <h5 class="fw-bold mb-0">Episode 1</h5>
-                    </div>
+            </div>
+        </nav>
+    </header>
+    <!--Header end-->
+    <!--Product Section begin-->
+    <section class="product mt-5">
+        <div class="container">
+            <div class="anime_info row gy-4 align-items-start">
+                <div class="anime_info_pic col-12 col-md-4 col-lg-3">
+                    <img class="img-fluid w-100 rounded shadow-lg"
+                        src="https://otakudesu.best/wp-content/uploads/2020/03/Bofuri-Sub-Indo.jpg" alt="Poster Bofuri">
+                </div>
+                <div class="anime_info_text col-12 col-md-8 col-lg-9">
+                    <div class="anime_info_text_title">
+                        <h2 class="fw-bold mb-3">Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu.
+                        </h2>
 
-                    <div class="col-12 col-lg-4">
-                        <div class="bg-dark bg-opacity-50 p-3 rounded shadow-sm border border-secondary border-opacity-25" style="max-height: 450px; overflow-y: auto;">
-            
-                            <div class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-secondary">
-                                <h6 class="fw-bold mb-0"><i class="bi bi-list-ol me-2"></i>Daftar Episode</h6>
-                                <span class="badge bg-secondary">12 Eps</span>
-                            </div>
-                            <div class="row g-2">
-                                <div class="col-3 col-sm-2 col-md-2 col-lg-3">
-                                    <a href="#" class="btn btn-danger w-100 fw-bold rounded-1 py-2">1</a>
-                                </div>
-                                <div class="col-3 col-sm-2 col-md-2 col-lg-3">
-                                    <a href="#" class="btn btn-outline-light w-100 fw-bold rounded-1 py-2">2</a>
-                                </div>
-                                <div class="col-3 col-sm-2 col-md-2 col-lg-3">
-                                    <a href="#" class="btn btn-outline-light w-100 fw-bold rounded-1 py-2">3</a>
-                                </div>
-                                <div class="col-3 col-sm-2 col-md-2 col-lg-3">
-                                    <a href="#" class="btn btn-outline-light w-100 fw-bold rounded-1 py-2">4</a>
-                                </div>
-                                <div class="col-3 col-sm-2 col-md-2 col-lg-3">
-                                    <a href="#" class="btn btn-outline-light w-100 fw-bold rounded-1 py-2">5</a>
-                                </div>
-                                </div>
+                        <div class="anime_info_text_badges d-flex flex-wrap gap-2 mb-4">
+                            <span class="badge bg-warning text-dark rounded-pill px-3 py-2"><i
+                                    class="bi bi-star-fill me-1"></i> 8.5</span>
+                            <span class="badge bg-danger rounded-pill px-3 py-2">Completed</span>
+                            <span class="badge bg-secondary border border-light rounded-pill px-3 py-2">Action</span>
+                            <span class="badge bg-secondary border border-light rounded-pill px-3 py-2">Fantasy</span>
+                            <span class="badge bg-secondary border border-light rounded-pill px-3 py-2">Sci-Fi</span>
+                        </div>
+
+                        <div class="anime_info_text_desc text-light" style="line-height: 1.8; font-size: 1.05rem;">
+                            <p>Suatu hari Kaede Honjou diajak oleh sahabatnya untuk bermain salah satu game VRMMO
+                                terkenal yaitu New World Online. Walaupun sangat jarang bermain game akhirnya ia mencoba
+                                game tersebut.</p>
+                            <p>Di dalam game, Kaede menggunakan nickname Maple. Tanpa berbekal pengalaman apapun ia
+                                mencoba untuk menjelajah game ini. Karena tak ingin merasakan sakit, ia memilih untuk
+                                menggunakan karakter tameng dan mengalokasikan semua status pointnnya untuk meningkatkan
+                                daya tahan.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </body>
+            <div class="row mt-5 gy-4">
+                <div class="col-12 col-lg-8">
+                    <div class="ratio ratio-16x9 shadow-lg rounded overflow-hidden mb-3">
+                        <iframe
+                            src="https://desustream.info/dstream/otakuplay/v2/index.php?id=TzQvcis4MGc3K2ZaaGJ6QThaNERGbmd5dlZkSjNScnZEMGpKRk5QRnRxVT0="
+                            frameborder="0" title="Anime Video Player" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h5 class="fw-bold mb-0">Episode 1</h5>
+                </div>
+                <div class="col-12 col-lg-4">
+
+                    <div
+                        class="bg-dark bg-opacity-50 p-3 rounded shadow-sm border border-secondary border-opacity-25 mb-4">
+                        <h6 class="fw-bold mb-3"><i class="bi bi-server me-2"></i>Pilih Resolusi & Server</h6>
+
+                        <div class="accordion accordion-flush" id="accordionServer" data-bs-theme="dark">
+
+                            <div class="accordion-item bg-transparent border-secondary border-bottom">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none p-3"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse360"
+                                        aria-expanded="false">
+                                        Mirror 360p
+                                    </button>
+                                </h2>
+                                <div id="collapse360" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionServer">
+                                    <div class="accordion-body p-3 pt-0 d-flex flex-wrap gap-2">
+                                        <a href="#" class="btn btn-sm btn-outline-light px-3">Default</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-transparent border-secondary border-bottom">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-transparent text-white fw-bold shadow-none p-3"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse480"
+                                        aria-expanded="true">
+                                        Mirror 480p
+                                    </button>
+                                </h2>
+                                <div id="collapse480" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionServer">
+                                    <div class="accordion-body p-3 pt-0 d-flex flex-wrap gap-2">
+                                        <a href="#" class="btn btn-sm btn-outline-light px-3">animedesustream</a>
+                                        <a href="#" class="btn btn-sm btn-danger px-3">ikanstream</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-transparent border-secondary">
+                                <h2 class="accordion-header">
+                                    <button
+                                        class="accordion-button collapsed bg-transparent text-white fw-bold shadow-none p-3"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse720"
+                                        aria-expanded="false">
+                                        Mirror 720p
+                                    </button>
+                                </h2>
+                                <div id="collapse720" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionServer">
+                                    <div class="accordion-body p-3 pt-0 d-flex flex-wrap gap-2">
+                                        <a href="#" class="btn btn-sm btn-outline-light px-3">sukanimedesustream</a>
+                                        <a href="#" class="btn btn-sm btn-outline-light px-3">mega</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-dark bg-opacity-50 p-3 rounded shadow-sm border border-secondary border-opacity-25">
+
+                        <div
+                            class="d-flex justify-content-between align-items-center mb-3 pb-2 border-bottom border-secondary">
+                            <h6 class="fw-bold mb-0"><i class="bi bi-list-ol me-2"></i>Daftar Episode</h6>
+
+                            <div id="wadah-info-episode">
+                                <span id="badge-total-eps" class="badge bg-secondary">12 Eps</span>
+
+                                <select id="select-batch-eps"
+                                    class="form-select form-select-sm w-auto text-bg-dark border-secondary shadow-none d-none"
+                                    aria-label="Pilih Rentang">
+                                    <option value="1-100" selected>Eps 1 - 100</option>
+                                    <option value="101-200">Eps 101 - 200</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div id="wadah-tombol-episode" class="row g-2 custom-scrollbar"
+                            style="max-height: 300px; overflow-y: auto; overflow-x: hidden;">
+
+                            <div class="col-3 col-sm-2 col-md-2 col-lg-3">
+                                <a href="#" class="btn btn-danger w-100 fw-bold rounded-1 py-2">1</a>
+                            </div>
+                            <div class="col-3 col-sm-2 col-md-2 col-lg-3">
+                                <a href="#" class="btn btn-outline-light w-100 fw-bold rounded-1 py-2">2</a>
+                            </div>
+                            <div class="col-3 col-sm-2 col-md-2 col-lg-3">
+                                <a href="#" class="btn btn-outline-light w-100 fw-bold rounded-1 py-2">3</a>
+                            </div>
+                            <div class="col-3 col-sm-2 col-md-2 col-lg-3">
+                                <a href="#" class="btn btn-outline-light w-100 fw-bold rounded-1 py-2">4</a>
+                            </div>
+                            <div class="col-3 col-sm-2 col-md-2 col-lg-3">
+                                <a href="#" class="btn btn-outline-light w-100 fw-bold rounded-1 py-2">5</a>
+                            </div>
+                            <div class="col-3 col-sm-2 col-md-2 col-lg-3">
+                                <a href="#" class="btn btn-outline-light w-100 fw-bold rounded-1 py-2">6</a>
+                            </div>
+                            <div class="col-3 col-sm-2 col-md-2 col-lg-3">
+                                <a href="#" class="btn btn-outline-light w-100 fw-bold rounded-1 py-2">7</a>
+                            </div>
+                            <div class="col-3 col-sm-2 col-md-2 col-lg-3">
+                                <a href="#" class="btn btn-outline-light w-100 fw-bold rounded-1 py-2">8</a>
+                            </div>
+                            <div class="col-3 col-sm-2 col-md-2 col-lg-3">
+                                <a href="#" class="btn btn-outline-light w-100 fw-bold rounded-1 py-2">9</a>
+                            </div>
+                            <div class="col-3 col-sm-2 col-md-2 col-lg-3">
+                                <a href="#" class="btn btn-outline-light w-100 fw-bold rounded-1 py-2">10</a>
+                            </div>
+                            <div class="col-3 col-sm-2 col-md-2 col-lg-3">
+                                <a href="#" class="btn btn-outline-light w-100 fw-bold rounded-1 py-2">11</a>
+                            </div>
+                            <div class="col-3 col-sm-2 col-md-2 col-lg-3">
+                                <a href="#" class="btn btn-outline-light w-100 fw-bold rounded-1 py-2">12</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section>
+        <div class="container mt-5">
+            <h3 class="border-bottom border-secondary pb-2 mb-4">Mungkin kamu suka</h3>
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-2 my-3">
+                    <div class="card text-bg-dark h-100 shadow-sm border-secondary border-opacity-50">
+                        <img src="https://otakudesu.best/wp-content/uploads/2020/03/Bofuri-Sub-Indo.jpg"
+                            class="card-img-top" alt="Poster">
+                        <div class="card-body p-2 text-center">
+                            <h6 class="card-title fw-bold mb-0 text-truncate"
+                                title="Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu.">
+                                Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu.
+                            </h6>
+                            <div class="d-flex flex-wrap justify-content-center gap-1 mt-2" style="font-size: 0.8rem;">
+                                <span
+                                    class="badge bg-secondary border border-light rounded-pill px-2 py-1">Action</span>
+                                <span
+                                    class="badge bg-secondary border border-light rounded-pill px-2 py-1">Fantasy</span>
+                                <span
+                                    class="badge bg-secondary border border-light rounded-pill px-2 py-1">Sci-Fi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Product session end-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
