@@ -13,22 +13,24 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
-<body class="text-white" style="background-color: #0b0c2a;">
+<body class="text-white" style="background-color: #0b0c2a; overflow-x: hidden;">
     <!--Header begin-->
     <header id="anime-header" class="anime-header">
         <nav id="anime-navbar" class="navbar navbar-expand-lg sticky-top navbar-dark anime-navbar"
             style="background-color: #070720;">
             <div class="container">
-                <a id="anime-navbar-brand" class="navbar-brand text-white anime-navbar-brand" href="#"
+                <a id="anime-navbar-brand"
+                    class="d-flex gap-2 align-items-center navbar-brand text-white anime-navbar-brand" href="#"
                     aria-label="Beranda Nontonimek">
-                    <span class="h3 m-0 fw-bold d-block">Nontonimek</span>
+                    <img src="logo.png" style="width: 50px; height: 50px;" alt="">
+                    <span class="h3 m-0 fw-bold d-block ps-2">Nontonimek</span>
                 </a>
                 <button id="anime-navbar-toggler" class="navbar-toggler anime-navbar-toggler" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarUtama" aria-controls="navbarUtama"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex anime-navbar-collapse" id="navbarUtama">
+                <div class="collapse navbar-collapse anime-navbar-collapse" id="navbarUtama">
                     <ul id="anime-nav-menu" class="navbar-nav mx-auto mb-2 mb-lg-0 anime-nav-menu">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -62,9 +64,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div id="anime-trending-content" class="trending anime-trending-content">
+                    <div id="anime-trending-content" class="trending anime-trending-content overflow-hidden">
                         <div class="row align-items-center mb-4 anime-trending-header">
-                            <div class="col-lg-8 col-md-8 col-sm-8">
+                            <div class="col-8 col-md-8 col-lg-8">
                                 <div class="py-3 section-title anime-section-title">
                                     <h2 class="h4 border-start border-danger border-5 ps-3 anime-section-title-text">
                                         LAGI
@@ -81,12 +83,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row anime-trending-list">
-                            <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="row g-2 anime-trending-list">
+                            <div class="col-4 col-md-4 col-lg-4">
                                 <div class="product_item anime-product-item">
                                     <div class="position-relative rounded product_item_pic set-bg anime-product-item-pic"
                                         data-setbg="img/trending/trend-1.jpg"
-                                        style=" height: 325px; background-size: cover; background-position: center; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKr_hVwNpXiV7CKkYyUsliFmnKfRp9grQLg&s);">
+                                        style="height: 200px; background-size: cover; background-position: center; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKr_hVwNpXiV7CKkYyUsliFmnKfRp9grQLg&s);">
                                         <div
                                             class="ep position-absolute top-0 start-0 m-2 bg-danger text-white px-2 py-1 rounded anime-product-ep-badge">
                                             Episode 18</div>
@@ -107,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <aside class="col-lg-4 col-md-6 col-sm-8 anime-sidebar-col">
+                <aside class="col-lg-4 col-md-6 anime-sidebar-col">
                     <div id="anime-product-sidebar" class="product_sidebar anime-product-sidebar">
                         <div id="anime-sidebar-newrelease" class="product_sidebar_newrelease anime-sidebar-newrelease">
                             <div class="py-3 section-title anime-section-title">
