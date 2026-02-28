@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nontonimek</title>
+    <title>Nontonimek - Tempat Nonton Anime Sub Indo Terlengkap</title>
+    <meta name="description"
+        content="Nontonimek menyediakan berbagai pilihan anime sub Indonesia terlengkap, dari yang sedang trending hingga rilis terbaru. Nonton anime gratis dengan resolusi tinggi.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -13,18 +15,21 @@
 
 <body class="text-white" style="background-color: #0b0c2a;">
     <!--Header begin-->
-    <header>
-        <nav class="navbar navbar-expand-lg sticky-top navbar-dark" style="background-color: #070720;">
+    <header id="anime-header" class="anime-header">
+        <nav id="anime-navbar" class="navbar navbar-expand-lg sticky-top navbar-dark anime-navbar"
+            style="background-color: #070720;">
             <div class="container">
-                <a class="navbar-brand text-white" href="#">
-                    <h3 class="m-0">Nontonimek</h3>
+                <a id="anime-navbar-brand" class="navbar-brand text-white anime-navbar-brand" href="#"
+                    aria-label="Beranda Nontonimek">
+                    <span class="h3 m-0 fw-bold d-block">Nontonimek</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarUtama"
-                    aria-controls="navbarUtama" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="anime-navbar-toggler" class="navbar-toggler anime-navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarUtama" aria-controls="navbarUtama"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex" id="navbarUtama">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <div class="collapse navbar-collapse d-flex anime-navbar-collapse" id="navbarUtama">
+                    <ul id="anime-nav-menu" class="navbar-nav mx-auto mb-2 mb-lg-0 anime-nav-menu">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -35,14 +40,17 @@
                             <a class="nav-link" href="#">Completed</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search" id="form-pencarian">
-                        <input class="form-control me-2" type="search" placeholder="Cari anime..." aria-label="Search"
-                            id="input-pencarian">
-                        <button class="btn btn-outline-light" type="submit">Cari</button>
+                    <form class="d-flex anime-search-form" role="search" id="form-pencarian">
+                        <input class="form-control me-2 anime-search-input" type="search" placeholder="Cari anime..."
+                            aria-label="Search" id="input-pencarian">
+                        <button id="anime-search-btn" class="btn btn-outline-light anime-search-btn"
+                            type="submit">Cari</button>
                     </form>
-                    <div class="d-flex align-items-center ms-3 gap-2">
-                        <a href="#" class="btn text-white text-decoration-none px-3">Masuk</a>
-                        <a href="#" class="btn btn-danger fw-semibold px-4">Daftar</a>
+                    <div id="anime-auth-buttons" class="d-flex align-items-center ms-3 gap-2 anime-auth-buttons">
+                        <a id="anime-login-btn" href="#"
+                            class="btn text-white text-decoration-none px-3 anime-login-btn">Masuk</a>
+                        <a id="anime-register-btn" href="#"
+                            class="btn btn-danger fw-semibold px-4 anime-register-btn">Daftar</a>
                     </div>
                 </div>
             </div>
@@ -50,78 +58,85 @@
     </header>
     <!--Header end-->
     <!--Product Section begin-->
-    <section class="product mt-5">
+    <main id="anime-trending-section" class="product mt-5 anime-trending-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="trending">
-                        <div class="row align-items-center mb-4">
+                    <div id="anime-trending-content" class="trending anime-trending-content">
+                        <div class="row align-items-center mb-4 anime-trending-header">
                             <div class="col-lg-8 col-md-8 col-sm-8">
-                                <div class="py-3 section-title">
-                                    <h4 class="border-start border-danger border-5 ps-3">LAGI TRENDING</h4>
+                                <div class="py-3 section-title anime-section-title">
+                                    <h2 class="h4 border-start border-danger border-5 ps-3 anime-section-title-text">
+                                        LAGI
+                                        TRENDING</h2>
                                 </div>
                             </div>
                             <div class="col-4 text-end">
-                                <div class="btn_viewall">
-                                    <a href="#" class="text-white text-decoration-none primary-btn">
+                                <div class="btn_viewall anime-btn-viewall">
+                                    <a id="anime-viewall-trending-btn" href="#"
+                                        class="text-white text-decoration-none primary-btn anime-viewall-btn">
                                         View All
                                         <span class="bi bi-arrow-right ms-2"></span>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row anime-trending-list">
                             <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product_item">
-                                    <div class="position-relative rounded product_item_pic set-bg"
+                                <div class="product_item anime-product-item">
+                                    <div class="position-relative rounded product_item_pic set-bg anime-product-item-pic"
                                         data-setbg="img/trending/trend-1.jpg"
                                         style=" height: 325px; background-size: cover; background-position: center; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKr_hVwNpXiV7CKkYyUsliFmnKfRp9grQLg&s);">
                                         <div
-                                            class="ep position-absolute top-0 start-0 m-2 bg-danger text-white px-2 py-1 rounded">
+                                            class="ep position-absolute top-0 start-0 m-2 bg-danger text-white px-2 py-1 rounded anime-product-ep-badge">
                                             Episode 18</div>
                                     </div>
-                                    <div class="product_item_text">
-                                        <ul class="list-unstyled d-flex gap-2 mt-3 mb-2">
-                                            <li class="badge bg-secondary rounded-pill py-2">Active</li>
-                                            <li class="badge bg-secondary rounded-pill py-2">Movie</li>
+                                    <div class="product_item_text anime-product-item-text">
+                                        <ul class="list-unstyled d-flex gap-2 mt-3 mb-2 anime-product-badges">
+                                            <li class="badge bg-secondary rounded-pill py-2 anime-badge-status">Active
+                                            </li>
+                                            <li class="badge bg-secondary rounded-pill py-2 anime-badge-type">Movie</li>
                                         </ul>
-                                        <h5 class="mb-5"><a href="#"
-                                                class="text-white text-decoration-none fw-bold">Boruto: Naruto Next
-                                                Generation</a></h5>
+                                        <h3 class="h5 mb-5 anime-product-title"><a href="#"
+                                                class="text-white text-decoration-none fw-bold anime-product-link">Boruto:
+                                                Naruto Next
+                                                Generation</a></h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="product_sidebar">
-                        <div class="product_sidebar_newrelease">
-                            <div class="py-3 section-title">
-                                <h4 class="border-start border-danger border-5 ps-3">RILIS TERBARU</h4>
+                <aside class="col-lg-4 col-md-6 col-sm-8 anime-sidebar-col">
+                    <div id="anime-product-sidebar" class="product_sidebar anime-product-sidebar">
+                        <div id="anime-sidebar-newrelease" class="product_sidebar_newrelease anime-sidebar-newrelease">
+                            <div class="py-3 section-title anime-section-title">
+                                <h2 class="h4 border-start border-danger border-5 ps-3 anime-section-title-text">RILIS
+                                    TERBARU</h2>
                             </div>
-                            <div class="product_sidebar_newrelease_item d-flex gap-3 mb-4">
-                                <div class="product_sidebar_newrelease_item_pic flex-shrink-0 rounded position-float set-bg"
+                            <div class="product_sidebar_newrelease_item d-flex gap-3 mb-4 anime-sidebar-item">
+                                <div class="product_sidebar_newrelease_item_pic flex-shrink-0 rounded position-float set-bg anime-sidebar-item-pic"
                                     data-setbg="img/trending/trend-1.jpg"
                                     style=" width: 90px; height: 130px; background-size: cover; background-position: center; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKr_hVwNpXiV7CKkYyUsliFmnKfRp9grQLg&s);">
                                 </div>
-                                <div class="product_sidebar_newrelease_item_text py-1">
-                                    <ul class="list-unstyled d-flex gap-2 mt-3 mb-2">
-                                        <li class="badge bg-secondary rounded-pill py-2">Active</li>
-                                        <li class="badge bg-secondary rounded-pill py-2">Movie</li>
+                                <div class="product_sidebar_newrelease_item_text py-1 anime-sidebar-item-text">
+                                    <ul class="list-unstyled d-flex gap-2 mt-3 mb-2 anime-product-badges">
+                                        <li class="badge bg-secondary rounded-pill py-2 anime-badge-status">Active</li>
+                                        <li class="badge bg-secondary rounded-pill py-2 anime-badge-type">Movie</li>
                                     </ul>
-                                    <h5><a href="#" class="text-white text-decoration-none fw-bold">Boruto: Naruto Next
-                                            Generation</a></h5>
-                                    <h6>Episode: 18</h3>
+                                    <h3 class="h5 anime-sidebar-title"><a href="#"
+                                            class="text-white text-decoration-none fw-bold anime-sidebar-link">Boruto:
+                                            Naruto Next
+                                            Generation</a></h3>
+                                    <p class="anime-sidebar-ep mb-0">Episode: 18</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </aside>
             </div>
         </div>
-        </div>
-    </section>
+    </main>
     <!--Product Section end-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
