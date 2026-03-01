@@ -1,10 +1,16 @@
 - Buat LandingPage/HomePage (Isi list anime ongoing yang baru rilis )
 --Buat Header terlebih dahulu ada navigasi home, completed, ongoing dengan ada search bar di kanan ujung dan logo di kiri ujung (V)
 --Buat section isinya anime yang lagi trending dengan card (V)
---Buat Footer 
---Buat login/signup page
+--Buat Footer (V)
+--Buat login/signup page (V)
+--Buat genre page (V)
+-- Page view all (sekalian page genre)
 
 -Buat halaman nonton
 --Buat header dan juga informasi anime yang di tonton (V)
 --buat videoplayer untuk menonton dan pilihan episode (V)
 --mempercantik pilihan episode dan buat streaming service juga buat untuk rekomendasi anime (V)
+
+- Login/Singup page
+-- Page Lupa Password
+-- Page autentikasi
