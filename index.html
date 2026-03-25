@@ -10,44 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body,
-        .custom-scrollbar {
-            scrollbar-width: 6px;
-            scrollbar-color: #495057 transparent;
-        }
-
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        .custom-scrollbar::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background-color: #495057;
-            border-radius: 10px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background-color: #e07580;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="text-white" style="background-color: #0b0c2a; overflow-x: hidden;">
-    <!--Header begin-->
     <header id="anime-header" class="anime-header">
         <nav id="anime-navbar" class="navbar navbar-expand-lg sticky-top navbar-dark anime-navbar"
             style="background-color: #070720;">
@@ -55,7 +21,7 @@
                 <a id="anime-navbar-brand"
                     class="d-flex gap-2 align-items-center navbar-brand text-white anime-navbar-brand" href="index.html"
                     aria-label="Beranda Nontonimek">
-                    <img src="logo.png" style="width: 50px; height: 50px;" alt="">
+                    <img src="assets/img/logo.png" style="width: 50px; height: 50px;" alt="">
                     <span class="h3 m-0 fw-bold d-block ps-2">Nontonimek</span>
                 </a>
                 <button id="anime-navbar-toggler" class="navbar-toggler anime-navbar-toggler" type="button"
@@ -69,10 +35,10 @@
                             <a class="nav-link" aria-current="page" href="genre.html">Genre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Ongoing</a>
+                            <a class="nav-link" href="ongoing.html">Ongoing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Completed</a>
+                            <a class="nav-link" href="completed.html">Completed</a>
                         </li>
                     </ul>
                     <form class="d-flex anime-search-form" role="search" id="form-pencarian">
@@ -81,18 +47,11 @@
                         <button id="anime-search-btn" class="btn btn-outline-light anime-search-btn"
                             type="submit">Cari</button>
                     </form>
-                    <div id="anime-auth-buttons" class="d-flex align-items-center me-3 my-3 gap-2 anime-auth-buttons">
-                        <a id="anime-login-btn" href="login.html"
-                            class="btn text-white text-decoration-none px-3 anime-login-btn">Masuk</a>
-                        <a id="anime-register-btn" href="signup.html"
-                            class="btn btn-danger fw-semibold px-4 anime-register-btn">Daftar</a>
-                    </div>
+
                 </div>
             </div>
         </nav>
     </header>
-    <!--Header end-->
-    <!--Product Section begin-->
     <main id="anime-trending-section" class="product mt-5 anime-trending-section">
         <div class="container">
             <div class="row">
@@ -110,7 +69,7 @@
                             </div>
                             <div class="col-4 text-end">
                                 <div class="btn_viewall anime-btn-viewall">
-                                    <a id="anime-viewall-trending-btn" href="#"
+                                    <a id="anime-viewall-ongoing-btn" href="ongoing.html"
                                         class="text-white text-decoration-none primary-btn anime-viewall-btn">
                                         View All
                                         <span class="bi bi-arrow-right ms-2"></span>
@@ -118,32 +77,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row g-2 anime-trending-list">
-                            <div class="col-4 col-md-4 col-lg-4">
-                                <div class="product_item anime-product-item">
-                                    <a href="watch.html" class="text-decoration-none">
-                                        <div class="position-relative rounded product_item_pic set-bg anime-product-item-pic"
-                                            data-setbg="img/trending/trend-1.jpg"
-                                            style="height: 200px; background-size: cover; background-position: center; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKr_hVwNpXiV7CKkYyUsliFmnKfRp9grQLg&s);">
-                                            <div
-                                                class="ep position-absolute top-0 start-0 m-2 bg-danger text-white px-2 py-1 rounded anime-product-ep-badge">
-                                                Episode 18</div>
-                                        </div>
-                                        <div class="product_item_text anime-product-item-text">
-                                            <ul class="list-unstyled d-flex gap-2 mt-3 mb-2 anime-product-badges">
-                                                <li class="badge bg-secondary rounded-pill py-2 anime-badge-status">
-                                                    Active
-                                                </li>
-                                                <li class="badge bg-secondary rounded-pill py-2 anime-badge-type">Movie
-                                                </li>
-                                            </ul>
-                                            <h3 class="h5 mb-5 anime-product-title"><a href="watch.html"
-                                                    class="text-white text-decoration-none fw-bold anime-product-link">Boruto:
-                                                    Naruto Next Generation</a></h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                        <div id="ongoing-anime-list" class="row g-2 anime-trending-list">
                         </div>
                     </div>
                     <div id="anime-trending-content" class="trending anime-trending-content overflow-hidden">
@@ -160,7 +94,7 @@
                             </div>
                             <div class="col-4 text-end">
                                 <div class="btn_viewall anime-btn-viewall">
-                                    <a id="anime-viewall-trending-btn" href="#"
+                                    <a id="anime-viewall-completed-btn" href="completed.html"
                                         class="text-white text-decoration-none primary-btn anime-viewall-btn">
                                         View All
                                         <span class="bi bi-arrow-right ms-2"></span>
@@ -168,32 +102,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row g-2 anime-trending-list">
-                            <div class="col-4 col-md-4 col-lg-4">
-                                <div class="product_item anime-product-item">
-                                    <a href="watch.html" class="text-decoration-none">
-                                        <div class="position-relative rounded product_item_pic set-bg anime-product-item-pic"
-                                            data-setbg="img/trending/trend-1.jpg"
-                                            style="height: 200px; background-size: cover; background-position: center; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKr_hVwNpXiV7CKkYyUsliFmnKfRp9grQLg&s);">
-                                            <div
-                                                class="ep position-absolute top-0 start-0 m-2 bg-danger text-white px-2 py-1 rounded anime-product-ep-badge">
-                                                Episode 18</div>
-                                        </div>
-                                        <div class="product_item_text anime-product-item-text">
-                                            <ul class="list-unstyled d-flex gap-2 mt-3 mb-2 anime-product-badges">
-                                                <li class="badge bg-secondary rounded-pill py-2 anime-badge-status">
-                                                    Active
-                                                </li>
-                                                <li class="badge bg-secondary rounded-pill py-2 anime-badge-type">Movie
-                                                </li>
-                                            </ul>
-                                            <h3 class="h5 mb-5 anime-product-title"><a href="watch.html"
-                                                    class="text-white text-decoration-none fw-bold anime-product-link">Boruto:
-                                                    Naruto Next Generation</a></h3>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+                        <div id="completed-anime-list" class="row g-2 anime-trending-list">
                         </div>
                     </div>
                 </div>
@@ -204,22 +113,7 @@
                                 <h2 class="h4 border-start border-danger border-5 ps-3 anime-section-title-text">RILIS
                                     TERBARU</h2>
                             </div>
-                            <div class="product_sidebar_newrelease_item d-flex gap-3 mb-4 anime-sidebar-item">
-                                <div class="product_sidebar_newrelease_item_pic flex-shrink-0 rounded position-float set-bg anime-sidebar-item-pic"
-                                    data-setbg="img/trending/trend-1.jpg"
-                                    style=" width: 90px; height: 130px; background-size: cover; background-position: center; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcKr_hVwNpXiV7CKkYyUsliFmnKfRp9grQLg&s);">
-                                </div>
-                                <div class="product_sidebar_newrelease_item_text py-1 anime-sidebar-item-text">
-                                    <ul class="list-unstyled d-flex gap-2 mb-2 anime-product-badges">
-                                        <li class="badge bg-secondary rounded-pill py-2 anime-badge-status">Active</li>
-                                        <li class="badge bg-secondary rounded-pill py-2 anime-badge-type">Movie</li>
-                                    </ul>
-                                    <h3 class="h5 anime-sidebar-title"><a href="#"
-                                            class="text-white text-decoration-none fw-bold anime-sidebar-link">Boruto:
-                                            Naruto Next
-                                            Generation</a></h3>
-                                    <p class="anime-sidebar-ep mb-0">Episode: 18</p>
-                                </div>
+                            <div id="sidebar-rilis-list">
                             </div>
                         </div>
                         <div id="anime-sidebar-newrelease" class="product_sidebar_newrelease anime-sidebar-newrelease">
@@ -228,16 +122,8 @@
                                     ANIME</h2>
                             </div>
                             <div class="product_sidebar_newrelease_item d-flex gap-3 mb-4 anime-sidebar-item">
-                                <ul
+                                <ul id="sidebar-genre-list"
                                     class="list-unstyled d-flex flex-wrap gap-3 justify-content-start mb-2 anime-product-badges">
-                                    <li class="badge bg-secondary rounded-pill py-2 anime-badge-type">Action</li>
-                                    <li class="badge bg-secondary rounded-pill py-2 anime-badge-type">Adventure</li>
-                                    <li class="badge bg-secondary rounded-pill py-2 anime-badge-type">Fantasy</li>
-                                    <li class="badge bg-secondary rounded-pill py-2 anime-badge-type">Supernatural</li>
-                                    <li class="badge bg-secondary rounded-pill py-2 anime-badge-type">Comedy</li>
-                                    <li class="badge bg-secondary rounded-pill py-2 anime-badge-type">Harem</li>
-                                    <li class="badge bg-secondary rounded-pill py-2 anime-badge-type">Ecchi</li>
-                                    <li class="badge bg-secondary rounded-pill py-2 anime-badge-type">Thriller</li>
                                 </ul>
                             </div>
                         </div>
@@ -247,15 +133,13 @@
             </div>
         </div>
     </main>
-    <!--Product Section end-->
-    <!--Footer begin-->
     <footer id="anime-footer" class="text-center text-md-start text-white pt-5 pb-4 mt-5"
         style="background-color: #070720;">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-lg-4 mx-auto mb-4">
                     <div class="d-flex align-items-center justify-content-center justify-content-md-start mb-3">
-                        <img src="logo.png" alt="Nontonimek Logo" class="img-fluid me-3" loading="lazy"
+                        <img src="assets/img/logo.png" alt="Nontonimek Logo" class="img-fluid me-3" loading="lazy"
                             style="width: 50px; height: 50px; object-fit: contain;">
                         <h5 class="text-uppercase fw-bold mb-0">Nontonimek</h5>
                     </div>
@@ -268,8 +152,8 @@
                     <h6 class="text-uppercase fw-bold mb-4">Navigasi</h6>
                     <p><a href="#" class="text-secondary text-decoration-none">Beranda</a></p>
                     <p><a href="#" class="text-secondary text-decoration-none">Genre</a></p>
-                    <p><a href="#" class="text-secondary text-decoration-none">Ongoing Anime</a></p>
-                    <p><a href="#" class="text-secondary text-decoration-none">Completed Anime</a></p>
+                    <p><a href="ongoing.html" class="text-secondary text-decoration-none">Ongoing Anime</a></p>
+                    <p><a href="completed.html" class="text-secondary text-decoration-none">Completed Anime</a></p>
                 </div>
                 <div class="col-md-3 col-lg-3 mx-auto mb-md-0 mb-4">
                     <h6 class="text-uppercase fw-bold mb-4">Kontak</h6>
@@ -292,10 +176,12 @@
             </div>
         </div>
     </footer>
-    <!--Footer end-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="env.js"></script>
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

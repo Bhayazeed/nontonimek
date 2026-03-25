@@ -1,1 +1,4 @@
 wajik-anime-api
+.env
+env.js
+docs/DESIGN.md

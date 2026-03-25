@@ -4,13 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nontonimek - Tempat Nonton Anime Sub Indo Terlengkap</title>
-    <meta name="description"
-        content="Nontonimek menyediakan berbagai pilihan anime sub Indonesia terlengkap, dari yang sedang trending hingga rilis terbaru. Nonton anime gratis dengan resolusi tinggi.">
+    <title>Ongoing Anime - Nontonimek</title>
+    <meta name="description" content="Nontonimek - Daftar Anime Ongoing">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -33,10 +31,10 @@
                 <div class="collapse navbar-collapse anime-navbar-collapse" id="navbarUtama">
                     <ul id="anime-nav-menu" class="navbar-nav mx-auto mb-2 mb-lg-0 anime-nav-menu">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Genre</a>
+                            <a class="nav-link" href="genre.html">Genre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="ongoing.html">Ongoing</a>
+                            <a class="nav-link active" aria-current="page" href="ongoing.html">Ongoing</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="completed.html">Completed</a>
@@ -53,12 +51,12 @@
             </div>
         </nav>
     </header>
-    <main id="genre-section" class="genre-section mt-5">
+    <main id="ongoing-section" class="genre-section mt-5">
         <div class="container">
-            <h2 id="genre-section-title" class="h4 border-start border-danger border-5 ps-3 anime-section-title-text">GENRE</h2>
-            <div id="genre-list-container" class="row g-3 justify-content-center">
+            <h2 id="ongoing-section-title" class="h4 border-start border-danger border-5 ps-3 anime-section-title-text">ONGOING ANIME</h2>
+            <div id="ongoing-list-container" class="row g-3 justify-content-center">
             </div>
-            <div id="genre-pagination">
+            <div id="ongoing-pagination">
             </div>
         </div>
     </main>
@@ -67,7 +65,7 @@
         crossorigin="anonymous"></script>
     <script src="env.js"></script>
     <script src="assets/js/api.js"></script>
-    <script src="assets/js/genre.js"></script>
+    <script src="assets/js/ongoing.js"></script>
 </body>
 
 </html>
