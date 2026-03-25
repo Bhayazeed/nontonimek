@@ -1,6 +1,6 @@
 
 
-const API_BASE = window.ENV ? window.ENV.API_BASE : "https://wajik-anime-api.vercel.app/otakudesu";
+const API_BASE = window.ENV ? window.ENV.API_BASE : "https://wajik-anime-api-nine.vercel.app/otakudesu";
 async function fetchAPI(endpoint) {
   try {
     const response = await fetch(`${API_BASE}${endpoint}`);
